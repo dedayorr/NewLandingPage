@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Sample</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</head>
+<body>
+  <div class="pl-6">
+    <nav class="bg-indigo-900 text-white p-2 w-11/12 " >
+      <div class="flex flex-row space-x-1 text-xs">
+          <iconify-icon icon="foundation:telephone"></iconify-icon>
+          <p>+00 1234 567</p>
+          <iconify-icon icon="game-icons:paper-plane"></iconify-icon>
+          <p>youremail@email.com</p>
+      </div>
+      <div class="space-x-3">
+        <iconify-icon icon="typcn:social-facebook"></iconify-icon>
+        <iconify-icon icon="carbon:logo-twitter"></iconify-icon>
+        <iconify-icon icon="tabler:brand-instagram"></iconify-icon>
+        <iconify-icon icon="mdi:web"></iconify-icon>
+      </div>
+    </nav>
+    <div>
+      <h1 class="font-bold text-2xl">Accounting</h1><br>
+      <div class="flex flex-row border w-8/12 space-x-5 p-2">
+        <input class=" outline-none" type="search" placeholder="Search" >
+        <iconify-icon class="text-2xl" icon="gridicons:search"></iconify-icon>
+        <div class="flex flex-row ">
+          <iconify-icon class="text-2xl opacity-50"icon="mi:menu"></iconify-icon>
+          <p class="opacity-20">MENU</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
