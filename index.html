@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page Sample</title>
+    <script src="https://kit.fontawesome.com/fc10e5ed24.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
+          screen:{
+            large: "789px",
+            larger: "1039px",
+          },
           extend: {
             colors: {
               clifford: '#da373d',
@@ -20,107 +25,121 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </head>
 <body class="font-sans">
-  <div class="pl-4 pr-5 ">
-    <nav class="bg-indigo-900 text-white p-2  " >
-      <div class="flex flex-row space-x-1 text-xs">
+  <div class=" w-full">
+    <nav class="bg-indigo-900 text-white p-2 pl-7 w-[95%] mx-auto sm:w-[80%] md:w-[90%] md:h-[50px] md:flex md:space-x-72 lg:space-x-96 " >
+      <div class="flex flex-row space-x-1 text-xs md:pt-3">
           <iconify-icon icon="foundation:telephone"></iconify-icon>
           <p>+00 1234 567</p>
           <iconify-icon icon="game-icons:paper-plane"></iconify-icon>
           <p>youremail@email.com</p>
       </div>
-      <div class="space-x-3 pt-3">
+      <div class="space-x-3 pt-3 ">
         <iconify-icon icon="typcn:social-facebook"></iconify-icon>
         <iconify-icon icon="carbon:logo-twitter"></iconify-icon>
         <iconify-icon icon="tabler:brand-instagram"></iconify-icon>
         <iconify-icon icon="mdi:web"></iconify-icon>
       </div>
     </nav>
-    <div>
-      <h1 class="font-bold text-2xl pt-2">Accounting</h1><br>
-      <div class="flex flex-row border w-8/12 space-x-2 p-2">
-        <input class=" outline-none" type="search" placeholder="Search" >
-        <iconify-icon class="text-2xl" icon="gridicons:search"></iconify-icon>
-        <div class="flex flex-row ">
-          <iconify-icon class="text-2xl opacity-50 ml-10"icon="mi:menu"></iconify-icon>
+    
+    <div class="pb-5">
+      <div class="flex pt-3 mx-auto w-[95%] sm:w-[80%] md:w-[90%] space-x-1 sm:space-x-16 md:space-x-24 lg:space-x-6">
+        <h1 class="font-bold text-2xl pt-2 ">Accounting</h1>
+        <div class="px-5 hidden text-xm font-bold sm:w-[85%] sm:mx-auto lg:inline-block lg:flex lg:flex-row lg:space-x-3" id="menu-items">
+          <li class="list-none py-3 hover:bg-slate-300"><a href="/">HOME.</a></li><hr>
+          <li class="list-none py-3 hover:bg-slate-300"><a href="/">ABOUT.</a></li><hr>
+          <li class="list-none py-3 hover:bg-slate-300"><a href="/">SERVICES.</a></li><hr>
+          <li class="list-none py-3 hover:bg-slate-300"><a href="/">CASE STUDY.</a></li><hr>
+          <li class="list-none py-3 hover:bg-slate-300"><a href="/">BLOG.</a></li><hr>
+          <li class="list-none py-3 hover:bg-slate-300"><a href="/">CONTACT.</a></li><hr>
+        </div>
+        <div class=" flex flex-row border h-[40px] w-[40%] relative">
+          <input class=" outline-none " type="search" placeholder="Search" >
+          <iconify-icon class="pt-2 text-2xl absolute right-0" icon="gridicons:search"></iconify-icon>
+        </div>
+        <div class="flex flex-row lg:hidden">
+          <div class=""><iconify-icon class=" text-3xl opacity-50  "icon="mi:menu"></iconify-icon></div>
           <div class="inline-block">
-            <a class="opacity-50 " id="menu">MENU</a>
+            <div class="opacity-50"><a id="menu" class="">MENU</a></div>
         </div>
       </div>
-    </div>
-    <div class="hover:bg-slate-300 hidden text-xm font-bold " id="menu-items">
-      <li class="list-none py-3"><a href="/">HOME</a></li><hr>
-      <li class="list-none py-3"><a href="/">ABOUT</a></li><hr>
-      <li class="list-none py-3"><a href="/">SERVICES</a></li><hr>
-      <li class="list-none py-3"><a href="/">CASE STUDY</a></li><hr>
-      <li class="list-none py-3"><a href="/">BLOG</a></li><hr>
-      <li class="list-none py-3"><a href="/">CONTACT</a></li><hr>
-    </div>
+      </div>
   </div>
-    <div class="grid">
-      <div class="bg-red-500 h-5/6 "><img class="pb-5 w-full" src="/images/pexels-photo-3768116.webp" alt=""></div>
-      <div class=" text-xs text-lime-600 pb-4">WELCOME TO ACCOUNTING</div>
-      <div class=" font-bold text-2xl font-sans">WE ARE THE BEST ACCOUNTING AGENCY</div><br>
-      <div class="grid gap-8">
-        <div class="flex  gap-5 ">
-          <div class="">
-            <iconify-icon class=" rounded-full bg-green-500 text-7xl" icon="game-icons:receive-money" style="color: white;"></iconify-icon>
+  <div style="background-image:url(/images/pexels-photo-4350216.webp); background-size: cover;" class="h-[100%] w-[100%] py-60 px-20 flex flex-col gap-5 ">
+    <p class="text-center text-lime-500">WE SUPPORT BUSINESS</p>
+    <p class="text-white font-bold text-center text-5xl">The best business support</p>
+    <button class="text-black text-sm bg-white p-2 rounded w-[200px] mx-auto">CONNECT WITH US</button>
+  </div>
+    <div class="flex flex-col mx-auto w-[90%] md:gap-7 md:flex md:flex- md:w-[100%] md:w-[80%] lg:flex lg:flex-row lg:w-[90%] lg:mx-auto lg:gap-2" >
+      <div class="w-[]"><img class="h-[100%] w-[100%] md:w-[100%] md:h-[100%] lg:w-[90%]" src="/images/karoline.jpeg" alt=""></div>
+      <div class="md:px-5 md:py-10 mx-auto lg:w-[50%]">
+        <div class=" text-xs text-lime-600 text-center">WELCOME TO ACCOUNTING</div>
+        <div class=" font-bold text-3xl font-sans text-center ">WE ARE THE BEST ACCOUNTING AGENCY</div><br>
+        <div class="grid gap-8 mx-auto">
+          <div class="flex gap-5 ">
+            <div class="rounded-full bg-green-500 h-[70px] min-w-[70px] flex justify-center shadow-2xl">
+              <iconify-icon class="mt-4" icon="map:accounting" style="color: #ffffff;" width="40" height="40"></iconify-icon>
+            </div>
+            <div class="grid gap-2">
+              <p class="font-bold text-xl">Market Analysis </p>
+              <p class="opacity-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            </div>
           </div>
-          <div class="grid gap-2">
-            <p class="font-bold text-xl">Market Analysis </p>
-            <p class="opacity-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+          <div class="flex gap-5">
+            <div class="bg-green-500 rounded-full bg-green-500 h-[70px] min-w-[70px] flex justify-center ">
+              <iconify-icon class="mt-4" icon="icon-park-outline:market-analysis" style="color: #ffffff;" width="40" height="40"></iconify-icon>
+            </div>
+            <div class="grid gap-2 bg-cover" >
+                <p class="font-bold text-xl">Accounting Advisor</p>
+                <p class="opacity-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            </div>
           </div>
-        </div>
-        <div class="flex gap-5">
-          <div>
-            <iconify-icon class=" rounded-full bg-green-500 text-7xl" icon="arcticons:simpleaccounting" style="color: white;"></iconify-icon>
+          <div class="flex gap-5">
+            <div class=" bg-green-500 rounded-full bg-green-500 h-[70px] min-w-[70px] flex justify-center ">
+              <iconify-icon class="mt-4" icon="carbon:text-link-analysis" style="color: white;" width="40" height="40"></iconify-icon>
+            </div>
+            <div class="grid gap-2">
+              <p class="font-bold text-xl">General Consultancy</p>
+              <p class="opacity-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            </div>
           </div>
-          <div class="grid gap-2">
-            <p class="font-bold text-xl">Accounting Advisor</p>
-            <p class="opacity-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          </div>
-        </div>
-        <div class="flex gap-5">
-          <div>
-            <iconify-icon class="overflow-hidden rounded-full bg-green-500 text-7xl" icon="carbon:text-link-analysis" style="color: white;"></iconify-icon>
-          </div>
-          <div class="grid gap-2">
-            <p class="font-bold text-xl">General Consultancy</p>
-            <p class="opacity-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          </div>
-        </div>
-        <div class="flex gap-5">
-          <div >
-            <iconify-icon class="flex rounded-full bg-green-500 text-7xl" icon="carbon:data-structured" style="color: white;" ></iconify-icon>
-          </div>
-          <div class="grid gap-2 ">
-            <p class="font-bold text-xl">Structured Assestment </p>
-            <p class="opacity-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+          <div class="flex gap-5">
+            <div class=" bg-green-500 rounded-full bg-green-500 h-[70px] min-w-[70px] flex justify-center " >
+              <iconify-icon class="mt-4" icon="carbon:data-structured" style="color: white;" width="40" height="40"></iconify-icon>
+            </div>
+            <div class="grid gap-2 ">
+              <p class="font-bold text-xl">Structured Assestment </p>
+              <p class="opacity-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="grid gap-10 pt-16">
-      <div class="grid gap-3">
+    <div class="grid gap-5 pt-16 md:pt-5 sm:px-20 md:grid md:grid-cols-2 lg:flex lg:flex-row lg:px-10">
+      <div class="grid gap-3 px-5 ">
+        <img class="h-20 mt-16 mb-[-100px] opacity-20" src="./images/accounting.png" alt="">
         <p class="font-bold text-xl">Accounting</p>
         <p class="opacity-50">Even the all-powerfull pointing has no control about the blind texts it is an almost unorthographic.</p>
       </div>
-      <div class="grid gap-3">
+      <div class="grid gap-3 px-5">
+        <img class="h-20 mt-16 mb-[-100px] opacity-20" src="./images/tax.png" alt="">
         <p class="font-bold text-xl">Tax, Compliance & Payroll</p>
         <p class="opacity-50">Even the all-powerfull pointing has no control about the blind texts it is an almost unorthographic.</p>
       </div>
-      <div class="grid gap-3">
+      <div class="grid gap-3 px-5">
+        <img class="h-20 mt-16 mb-[-100px] opacity-20" src="./images/saving.png" alt="">
         <p class="font-bold text-xl">Financial Services</p>
         <p class="opacity-50">Even the all-powerfull pointing has no control about the blind texts it is an almost unorthographic.</p>
       </div>
-      <div class="grid gap-3">
+      <div class="grid gap-3 px-5">
+        <img class="h-20 mt-16 mb-[-100px] opacity-20" src="./images/financial-profit.png" alt="">
         <p class="font-bold text-xl">Growth & Funding Access</p>
         <p class="opacity-50">Even the all-powerfull pointing has no control about the blind texts it is an almost unorthographic.</p>
       </div>
     </div>
-    <div class="grid gap-10 pt-28 justify-center">
+    <div class="grid gap-10 pt-28 justify-center md:grid md:grid-cols-2">
       <div class="grid text-center gap-3">
         <div class="font-bold text-5xl text-lime-600">50</div>
-        <div>YEARS OF EXPERIENCED</div>
+        <div>YEARS OF EXPERIENCED</div> 
       </div>
       <div class="grid text-center gap-3">
         <div class="font-bold text-5xl text-lime-600">8,500</div>
@@ -135,65 +154,116 @@
         <div>EXPERT CONSULTANT</div>
       </div>
     </div>
-    <div class="pt-20 ">
-      <div class="bg-teal-400 h-96 p-20 text-center  ">
-        <p>TESTIMONIES</p>
-        <p class="font-extrabold text-2xl">Happy Clients & feedbacks </p>
-      </div>
     </div>
-<br><br><br><br><br><br><br><br><br><br><br>
-
-
-
-
-
-
-
-    <footer class="bg-zinc-800">
-      <div class="p-5 pt-16">
-        <div class="font-bold text-xl text-white" >ABOUT US</div><br>
-        <div class="text-white opacity-30">A small river named Duben flows by their place and supplies it with necessary regelialia</div><br>
-        <div class="flex space-x-3">
-          <div class=" bg-green-500"><iconify-icon icon="carbon:logo-twitter" style="color: green;" width="30" height="30"></iconify-icon></div>
-          <div class=""><iconify-icon icon="ei:sc-facebook" style="color: green;" width="30" height="30"></iconify-icon></div>
-          <div class=""><iconify-icon icon="ph:instagram-logo-light" style="color: green;" width="30" height="30"></iconify-icon></div>
+    <div class="pt-20 ">
+      <div class="bg-teal-400 h-96 p-20 ">
+        <p class="text-center">TESTIMONIES</p>
+        <p class="font-extrabold text-3xl text-center">Happy Clients & feedbacks </p>
+        <div class="bg-white p-3">
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there lived the blind texts.</p>
+          <div class="flex flex-row">
+            <div><img class="rounded-full w-[30px] h-[30px]" src="/images/images.jpeg" alt=""></div>
+            <div class="">
+              <p class="font-bold">Roger Scott</p>
+              <p class="text-sm">Marketing Manager</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="p-5 pt-16">
-        <div class="font-bold text-xl text-white">SERVICES</div><br>
-        <div class="text-white opacity-30 mb-4">Market Analysis</div>
-        <div class="text-white opacity-30 mb-4">Accounting Advisor</div>
-        <div class="text-white opacity-30 mb-4">General Consultancy</div>
-        <div class="text-white opacity-30 ">Structured Assestment</div><br>
+      
+    </div><br>
+    <!-- NEXT SECTION -->
+    <div  class="sm:flex sm:flex-col" >
+      <div class="sm:grid sm:grid-cols-2 flex flex-col justify-center items-align-center bg-blue-300 h-40 gap-3 md:flex-row md:gap-20 md:pt-14">
+        <div class="px-3 text-2xl md:text-xl ">Sign Up for Your Free 1st Accounting Consultation</div>
+        <div class="flex px-3 h-10 sm:mr-10">
+          <input class="pl-5 rounded w-[100%] text-sm md:w-[500px] md:text-lg shadow-2xl " type="text" placeholder="Enter email address">
+          <button class="rounded bg-green-600 w-[50%] text-sm text-white shadow-2xl md:w-[30%] md:text-lg ">Subscribe</button>
+        </div>
       </div>
-      <div class="p-5 ">
-        <div class="font-bold text-xl text-white">DISCOVER</div><br>
-        <div class="text-white opacity-30 mb-4">About us</div>
-        <div class="text-white opacity-30 mb-4">Contact us</div>
-        <div class="text-white opacity-30 mb-4">Terms & Condition</div>
-        <div class="text-white opacity-30 mb-4">Policies</div>
       </div>
-      <div class="p-5">
-        <div class="font-bold text-xl text-white">RESOURCES</div><br>
-        <div class="text-white opacity-30 mb-4">Security</div>
-        <div class="text-white opacity-30 mb-4">Global</div>
-        <div class="text-white opacity-30 mb-4">Charts</div>
-        <div class="text-white opacity-30 mb-4">Privacy</div>
+    <!-- NEXT SECTION -->
+    <div class="flex flex-col bg-gray-200 pb-20 ">
+      <div class="w-full text-center py-20 md:text-center md:py-32">
+        <div class="text-sm text-lime-600">PRICE & PLANS</div>
+        <div class="font-bold text-2xl md:text-3xl">Affordable Packages</div>
       </div>
-      <div class="text-white opacity-30 mb-4">Copyright &copy;2022 All rights reserved | This template is made with&hearts; by Colorib.com</div>
-      <div class=""></div>
+      <!-- NEXT SECTION -->
+      
+          <!-- FOOTER SECTION -->
+    <footer class="bg-zinc-800">
+      <div class="flex flex-col ">
+<div class="w-full lg:flex lg:flex-no-wrap">
+
+  <div class="flex flex-no-wrap  justify-around">
+
+    <div class="p-5 w-[45%]  ">
+      <div class="font-bold text-xl text-white " >ABOUT US</div><br>
+      <div class="text-white opacity-30">A small river named Duben flows by their place and supplies it with necessary regelialia.</div><br>
+      <div class="flex space-x-3">
+        <div class=" bg-green-500"><iconify-icon icon="carbon:logo-twitter" style="color: green;" width="30" height="30"></iconify-icon></div>
+        <div class=""><iconify-icon icon="ei:sc-facebook" style="color: green;" width="30" height="30"></iconify-icon></div>
+        <div class=""><iconify-icon icon="ph:instagram-logo-light" style="color: green;" width="30" height="30"></iconify-icon></div>
+      </div>
+    </div>
+    <div class="p-5 pt-16 pt-10 w-[45%] ">
+      <div class="font-bold text-xl text-white">SERVICES</div><br>
+      <div class="text-white opacity-30 mb-4">Market Analysis</div>
+      <div class="text-white opacity-30 mb-4">Accounting Advisor</div>
+      <div class="text-white opacity-30 mb-4">General Consultancy</div>
+      <div class="text-white opacity-30 ">Structured Assestment</div><br>
+    </div>
+  
+  
+  </div>
+
+  <div class="flex flex-no-wrap justify-around">
+    <div class="p-5 pt-10 w-[45%] ml-35 ">
+      <div class="font-bold text-xl text-white">DISCOVER</div><br>
+      <div class="text-white opacity-30 mb-4">About us</div>
+      <div class="text-white opacity-30 mb-4">Contact us</div>
+      <div class="text-white opacity-30 mb-4">Terms & Conditions</div>
+      <div class="text-white opacity-30 mb-4">Policies</div>
+    </div>
+    <div class="p-5 pt-10 pr-44 w-[45%] ">
+      <div class="font-bold text-xl text-white">RESOURCES</div><br>
+      <div class="text-white opacity-30 mb-4">Security</div>
+      <div class="text-white opacity-30 mb-4">Global</div>
+      <div class="text-white opacity-30 mb-4">Charts</div>
+      <div class="text-white opacity-30 mb-4">Privacy</div>
+    </div>
+  </div>
+
+
+</div>
+<section class="w-full flex justify-center">
+  <div class="w-[60%] p-5  ">
+    <div class="font-bold text-xl text-white ">FREE CONSULTATION</div><br>
+    <form class="" action="/" method="post">
+      <div class="pb-5"><input class="w-full h-10 bg-zinc-700 pl-3 rounded-md text-white opacity-30 md:bg-zinc-800" type="text" name="name" placeholder="Your Name"></div>
+      <div class="pb-5"><input class="w-full h-10 bg-zinc-700 pl-3 rounded-md text-white opacity-30 md:bg-zinc-800" type="email" name="email" placeholder="Your Email"></div>
+      <div class="pb-5"><input class="w-full h-10 bg-zinc-700 pl-3 rounded-md text-white opacity-30 md:bg-zinc-800" type="text" name="subject" placeholder="Subject"></div>
+      <div class="pb-5"><textarea class="w-full bg-zinc-700 pl-3 rounded-md text-white opacity-30 md:bg-zinc-800" name="message" id="message" cols="" rows="3" placeholder="Message"></textarea></div>
+      <input class="text-white bg-lime-700 w-full h-10 rounded-md" type="button" value="Send a message">
+    </form>
+  </div>
+</section>
+      </div>
+      <div>
+      <div class="text-white opacity-30 mb-4 p-5 md:flex">Copyright &copy;2022 All rights reserved | This template is made with &hearts; by <p class="text-lime-400"> Colorib.com</p> </div>
+      </div>
     </footer>
 
 
 
   <script>
-let menu_btn = document.getElementById('menu')
-let menu_items = document.getElementById("menu-items")
+      let menu_btn = document.getElementById('menu')
+      let menu_items = document.getElementById("menu-items")
 
-menu_btn.addEventListener('click', ()=>{
- menu_items.classList.toggle('hidden')
-// alert('Clicked')
-})
+      menu_btn.addEventListener('click', ()=>{
+      menu_items.classList.toggle('hidden')
+      // alert('Clicked')
+      })
 
   </script>
 </body>
