@@ -1,0 +1,287 @@
+body{
+    /* box-sizing: border-box; */
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* grid-column-gap: 1px;
+    grid-template-columns: auto auto; */
+    /* background-color: aqua; */
+    /* padding: 20px; */
+    height: 100vh;
+    width: auto;
+    margin: 0 auto;
+
+}
+
+.first_div{
+    /* background-color: yellow; */
+    width: 70%;
+    height: 100%;
+    display: none;
+}
+
+.second_div{
+    /* background-color: red; */
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.img_one{
+    width: 100%;
+    height: 100%;
+    height: fit-content;
+}
+
+.img_two{
+    width: 50%;
+    height:70px;
+    /* margin: 0 auto; */
+}
+.first_text{
+    font-size: large;
+    color: blue;
+    font-weight: bold;
+}
+
+hr{
+    height: 2px;
+    background-color:rgb(5, 5, 201) ;
+    width: 100%;
+    color: rgb(3, 3, 165);
+    margin-bottom: -3px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 95%;
+    /* background-color: aquamarine; */
+    align-items: center;
+    
+}
+
+.input1{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgba(14, 15, 15, 0.218); */
+    /* padding-right: 10px; */
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    border: solid 1px;
+    align-items: center;
+    box-shadow: 4px 4px rgba(5, 5, 14, 0.09);
+}
+
+input{
+    background-color: rgba(14, 15, 15, 0);
+    border: 1px;
+    height: 40px;
+    width: 80%;
+}
+.input2{
+    padding-left: 10px;
+    padding-right: 10px;
+    /* background-color: aqua; */
+    /* background-color: rgba(14, 15, 15, 0.298); */
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    border: solid 1px;
+    align-items: center;
+    box-shadow: 4px 4px rgba(5, 5, 14, 0.09);
+}
+
+button{
+    background-color: rgba(0, 128, 0, 0.491);
+    border: 1px;
+    border-radius: 10px;
+    width: 95%;
+}
+
+.input1:hover{
+    background-color: rgba(36, 36, 255, 0.859);
+}
+
+.input2:hover{
+    background-color: rgba(36, 36, 255, 0.859);
+}
+
+button:hover{
+    background-color: rgba(36, 36, 255, 0.859);
+}
+
+.form_div{
+    display: flex;
+    /* background-color: yellow; */
+    width: 100%;
+    row-gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px rgba(0, 0, 0, 0.148);
+    padding-top: 10px;
+    height: 70%;
+    /* box-shadow: 5px 5px rgba(5, 5, 14, 0.056); */
+}
+.button_text{
+    color: white;
+}
+
+.img_div{
+    display: flex;
+    justify-content: center;
+    /* background-color: pink; */
+    align-items: center;
+}
+
+.last_text{
+    color: blue;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.forget{
+    float:inline-end;
+    color: blue;
+
+}
+
+
+
+
+
+@media (min-width: 768px){
+    .second_div{
+        /* background-color: red; */
+        width: 70%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+}
+@media (min-width: 900px){
+    .second_div{
+        /* background-color: red; */
+        width: 50%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+}
+
+@media (min-width: 617px){
+    .second_div{
+        /* background-color: red; */
+        width: 70%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+}
+@media (min-width: 900px){
+    .second_div{
+        /* background-color: red; */
+        width: 60%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+}
+
+@media (min-width: 1024px){
+    .second_div{
+        /* background-color: red; */
+        width: 70%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        margin-right: 60px;
+        /* padding-top:; */
+    }
+    .first_div{
+        background-color: yellow;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        align-items: center;
+        /* grid-column-gap: 1px;
+        grid-template-columns: auto auto; */
+        /* background-color: aqua; */
+        /* padding: 20px; */
+        height: 100vh;
+        width: auto;
+        margin: 0 auto;
+        column-gap: 3%;
+        
+    }
+    .img_one{
+        width: 100%;
+        height: 100%;
+    
+    }
+    .img_div{
+        display: flex;
+        justify-content: center;
+        /* background-color: pink; */
+        align-items: center;
+    }
+    .img_two{
+        width: 40%;
+        height:70px;
+        /* margin: 0 auto; */
+    }
+    .form_div{
+        display: flex;
+        /* background-color: yellow; */
+        width: 100%;
+        row-gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        border: solid 1px rgba(0, 0, 0, 0.148);
+        padding-top: 10px;
+        height: 50%;
+    }
+
+    .text{
+        font-size:x-large;
+        position: absolute;
+        top: 50%;
+        color: white;
+        padding-left: 5%;
+    }
+    .appstore{
+        position: absolute;
+        top: 55%;
+        padding-left: 4%;
+
+    }
+}
